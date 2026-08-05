@@ -10,7 +10,7 @@ mediatek_setup_interfaces()
 	case $board in
 	abt,asr3000|\
 	buffalo,wsr-6000ax8|\
-	cmcc,rax3000m|\
+	cmcc,rax3000m*|\
 	cmcc,rax3000me|\
 	cmcc,xr30-mtkuboot|\
 	h3c,magic-nx30-pro|\
@@ -50,6 +50,7 @@ mediatek_setup_interfaces()
 	asus,rt-ax59u|\
 	asus,zenwifi-bt8|\
 	asus,zenwifi-bt8-ubootmod|\
+	bt,r320|\
 	cetron,ct3003|\
 	cetron,ct3003-ubootmod|\
 	cmcc,a10-stock|\
@@ -253,6 +254,9 @@ mediatek_setup_interfaces()
 		;;
 	zyxel,wx5600-t0-ubootmod)
 		ucidef_set_interface_lan "lan1 lan2"
+		;;
+	bt,rb300)
+		ucidef_set_interfaces_lan_wan "lan0 lan1 lan2 lan3" wan
 		;;
 	*)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
