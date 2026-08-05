@@ -178,6 +178,9 @@ platform_do_upgrade() {
 	hiveton,h5000m|\
 	huasifei,wh3000-emmc|\
 	huasifei,wh3000-pro-emmc|\
+	cmcc,rax3000m-emmc|\
+	bt,r320|\
+	bt,rb300|\
 	sl,3000-emmc|\
 	smartrg,sdg-8612|\
 	smartrg,sdg-8614|\
@@ -424,6 +427,9 @@ platform_copy_config() {
 	huasifei,wh3000-emmc|\
 	huasifei,wh3000-pro-emmc|\
 	jdcloud,re-cp-03|\
+	cmcc,rax3000m-emmc|\
+	bt,r320|\
+	bt,rb300|\
 	sl,3000-emmc|\
 	nradio,c8-668gl|\
 	smartrg,sdg-8612|\
