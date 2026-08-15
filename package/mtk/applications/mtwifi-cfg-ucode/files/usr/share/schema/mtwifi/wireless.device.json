@@ -28,11 +28,11 @@
             "description": "Do not scan for overlapping BSSs in HT40+/- mode"
         },
         "txpower": {
-            "type": "integer",
+            "type": "number",
             "description": "Transmission power (0-100)"
         },
         "beacon_int": {
-            "type": "integer",
+            "type": "number",
             "description": "Beacon interval"
         },
         "mu_beamformer": {
